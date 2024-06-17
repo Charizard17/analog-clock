@@ -1,6 +1,21 @@
+const numbers = document.getElementById("numbers")
 const secondsHand = document.getElementById("seconds-hand")
 const minutesHand = document.getElementById("minutes-hand")
 const hoursHand = document.getElementById("hours-hand")
+
+function printNumbers() {
+  for (let i = 1; i <= 12; ++i) {
+    const number = document.createElement("div")
+    number.className = "number"
+    number.style.transform = `rotate(${
+      i * 30
+    }deg) translate(0, -135px) rotate(-${i * 30}deg)`
+    number.textContent = i
+    numbers.appendChild(number)
+  }
+}
+
+printNumbers()
 
 function getTime() {
   const now = new Date()

@@ -14,6 +14,27 @@ body {
   border: solid 5px rgb(252, 255, 55);
 }
 
+#numbers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: rgb(205, 112, 255);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+}
+
 #seconds-hand {
   position: absolute;
   height: 130px;
